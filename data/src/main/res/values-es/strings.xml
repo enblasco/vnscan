@@ -1,0 +1,14 @@
+<resources>
+    <string name="error_500">Error interno del servidor</string>
+    <string name="error_404">Recurso no encontrado</string>
+    <string name="time_out">Tiempo de conexión agotado</string>
+    <string name="error_login">Usuario y/o contraseña incorrectos</string>
+    <string name="error_getting_scans">Error obteniendo los escaneos</string>
+    <string name="error_add_scan">Error añadiendo un scan</string>
+    <string name="error_delete_scans">Error borrando un scan</string>
+    <string name="error_getting_warehouses">Error obteniendo los almacenes</string>
+    <string name="error_getting_scan_lines">Error obteniendo las líneas</string>
+    <string name="error_creating_scan_lines">Error creando las líneas</string>
+    <string name="error_deleting_scan_lines">Error borrando las líneas</string>
+    <string name="error_getting_update">Error obteniendo la nueva versión</string>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+style="@style/WidhtMatchHeightMatch">
+
+    <es.verdnatura.core.components.editscan.VnEditScan
+        android:id="@+id/edtScan"
+        style="@style/WidhtMatchHeightWrap"
+        android:layout_marginBottom="@dimen/margin_small"/>
+
+    <es.verdnatura.core.components.swiperefreshlayout.VnSwipeRefreshLayout
+        android:id="@+id/swipeList"
+        style="@style/WidhtMatchHeightMatch"
+        android:layout_below="@+id/edtScan">
+
+        <es.verdnatura.core.components.recylerview.VnRecyclerView
+            android:id="@+id/list"
+            style="@style/WidhtMatchHeightMatch"
+            />
+    </es.verdnatura.core.components.swiperefreshlayout.VnSwipeRefreshLayout>
+
+    <include layout="@layout/progress"/>
+
+</RelativeLayout>

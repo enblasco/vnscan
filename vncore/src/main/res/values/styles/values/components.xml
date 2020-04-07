@@ -1,0 +1,38 @@
+<resources>
+
+    <style name="VnEditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/vn_edit_custom_height</item>
+        <item name="android:paddingLeft">@dimen/padding_medium</item>
+        <item name="android:background">@android:color/white</item>
+    </style>
+
+    <style name="VnClearText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/ic_clear</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">@dimen/margin_small</item>
+    </style>
+    
+    <style name="VnButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/vn_button_custom_height</item>
+        <item name="android:background">@color/colorAccent</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="VnTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="VnCheckBox">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+</resources>

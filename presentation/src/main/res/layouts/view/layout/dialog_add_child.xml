@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/WidhtMatchHeightMatch"
+    android:padding="@dimen/padding_large"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <TextView style="@style/WidhtWrapHeightWrap"
+        android:text="@string/add_child"
+        android:layout_marginBottom="@dimen/margin_medium"
+        android:textStyle="bold"
+        android:textSize="18sp"/>
+
+    <TextView style="@style/WidhtWrapHeightWrap"
+        android:text="@string/message_dialog_add_child"
+        android:layout_marginBottom="@dimen/margin_medium"/>
+
+    <es.verdnatura.core.components.edittext.VnEditText
+        android:id="@+id/childName"
+        style="@style/WidhtMatchHeightWrap"/>
+
+    <TextView android:id="@+id/createChild"
+        style="@style/VnTextView"
+        android:text="@string/accept"
+        android:layout_gravity="right"
+        android:padding="@dimen/padding_medium"/>
+
+</LinearLayout>

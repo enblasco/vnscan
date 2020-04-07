@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3e3d3d</color>
+    <color name="colorPrimaryDark">#2b2a2a</color>
+    <color name="colorAccent">#a9d42c</color>
+    <color name="verdnatura">#a9d42c</color>
+    <color name="background_grey">#DCDCDC</color>
+    <color name="orange_menu">#f7931e</color>
+    <color name="borders">#979797</color>
+</resources>

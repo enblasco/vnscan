@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <EditText style="@style/VnEditText"
+        android:id="@+id/edit_scan"
+        android:hint="@string/scan"
+        android:paddingLeft="@dimen/padding_medium"
+        android:inputType="number"/>
+    
+    <ImageView
+        android:id="@+id/edit_cam"
+        android:layout_width="@dimen/vn_edit_custom_height"
+        android:layout_height="@dimen/vn_edit_custom_height"
+        android:src="@drawable/ic_camera"
+        android:layout_alignParentRight="true"
+        android:padding="@dimen/padding_medium"/>
+
+</RelativeLayout>

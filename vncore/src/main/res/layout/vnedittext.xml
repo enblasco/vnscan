@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/WidhtMatchHeightWrap"
+    android:background="@color/colorAccent"
+    android:padding="1dp">
+
+    <RelativeLayout style="@style/WidhtMatchHeightWrap"
+        android:background="@android:color/white">
+
+        <EditText android:id="@+id/vnEditText"
+            style="@style/VnEditText"
+            android:layout_toLeftOf="@+id/clearVnEditText"
+            android:maxLines="1"
+            android:inputType="text"/>
+
+        <ImageView android:id="@+id/clearVnEditText"
+            style="@style/VnClearText" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
+

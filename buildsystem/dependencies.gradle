@@ -1,0 +1,142 @@
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
+
+ext{
+    //Android
+    androidBuildToolsVersion = "24.0.1"
+    androidMinSdkVersion = 15
+    androidTargetSdkVersion = 24
+    androidCompileSdkVersion = 24
+
+    //Libraries
+    gsonVersion = '2.3'
+    retrofitVersion = '2.2.0'
+    rxJavaVersion = '2.0.6'
+    rxAndroidVersion = '2.0.1'
+    daggerVersion = '2.5'
+    javaxInjectVersion = '1'
+    javaxAnnotationVersion = '1.0'
+    kotlinVersion = "1.1.0"
+    appcompatV7Version = "24.2.1"
+    butterKnifeVersion = '8.5.1'
+    barcodeScannerVersion = '1.9'
+    ankoVersion = '0.9'
+    designVersion = '24.2.1'
+
+
+    //Test
+    jUnitVersion = '4.12'
+    roboelectricVersion = '3.2.1'
+    kotlinVersion = '1.1.0'
+    kotlinTestVersion = '1.1.0'
+    mockitoKotlin = '1.4.0'
+    kluenVersion = '1.14'
+    assertJVersion = '1.7.1'
+
+    //androidTest
+    espressoVersion = '2.2.2'
+    annotationsVersion = '24.2.1'
+    rulesVersion = "0.5"
+    mockwebserverVersion = '3.5.0'
+    daggerMockVersion = '0.6.6'
+
+    //Development
+    leakCanaryVersion = '1.3.1'
+
+
+    dataDependencies = [
+            kotlin: "org.jetbrains.kotlin:kotlin-stdlib:${kotlinVersion}",
+            rxJava: "io.reactivex.rxjava2:rxjava:${rxJavaVersion}",
+            rxAndroid: "io.reactivex.rxjava2:rxandroid:${rxAndroidVersion}",
+            daggerCompiler: "com.google.dagger:dagger-compiler:${daggerVersion}",
+            dagger: "com.google.dagger:dagger:${daggerVersion}",
+            retrofit: "com.squareup.retrofit2:retrofit:${retrofitVersion}",
+            gson_converter: "com.squareup.retrofit2:converter-gson:${retrofitVersion}",
+            rxjava_adapter: "com.squareup.retrofit2:adapter-rxjava2:${retrofitVersion}"
+    ]
+
+    dataTestDependencies = [
+            jUnit: "junit:junit:${jUnitVersion}",
+            roboelectric: "org.robolectric:robolectric:${roboelectricVersion}",
+            kotlin: "org.jetbrains.kotlin:kotlin-stdlib:${kotlinVersion}",
+            kotlinTest: "org.jetbrains.kotlin:kotlin-test-junit:${kotlinTestVersion}",
+            mockitoKotlin: "com.nhaarman:mockito-kotlin:${mockitoKotlin}",
+            kluent: "org.amshove.kluent:kluent:${kluenVersion}"
+    ]
+
+
+    domainDependencies = [
+            rxJava: "io.reactivex.rxjava2:rxjava:${rxJavaVersion}",
+            javaxInject: "javax.inject:javax.inject:${javaxInjectVersion}",
+            kotlin: "org.jetbrains.kotlin:kotlin-stdlib:${kotlinVersion}",
+            gson: "com.google.code.gson:gson:${gsonVersion}",
+            javaxAnnotation: "javax.annotation:jsr250-api:${javaxAnnotationVersion}",
+            gson_converter: "com.squareup.retrofit2:converter-gson:${retrofitVersion}",
+    ]
+
+    domainTestDependencies = [
+            jUnit: "junit:junit:${jUnitVersion}",
+            kotlin: "org.jetbrains.kotlin:kotlin-stdlib:${kotlinVersion}",
+            kotlinTest: "org.jetbrains.kotlin:kotlin-test-junit:${kotlinTestVersion}",
+            mockitoKotlin: "com.nhaarman:mockito-kotlin:${mockitoKotlin}",
+            kluent: "org.amshove.kluent:kluent:${kluenVersion}",
+            assertj: "org.assertj:assertj-core:${assertJVersion}",
+
+    ]
+
+    presentationDependencies = [
+            kotlin: "org.jetbrains.kotlin:kotlin-stdlib:${kotlinVersion}",
+            appcomapt_v7: "com.android.support:appcompat-v7:${appcompatV7Version}",
+            dagger: "com.google.dagger:dagger:${daggerVersion}",
+            butterKnife: "com.jakewharton:butterknife:${butterKnifeVersion}",
+            kaptButterKnife: "com.jakewharton:butterknife-compiler:${butterKnifeVersion}",
+            kaptDagger: "com.google.dagger:dagger-compiler:${daggerVersion}",
+            rxAndroid: "io.reactivex.rxjava2:rxandroid:${rxAndroidVersion}",
+            javaxAnnotation: "javax.annotation:jsr250-api:${javaxAnnotationVersion}",
+            barcodeScanner: "me.dm7.barcodescanner:zxing:${barcodeScannerVersion}",
+    ]
+
+    presentationTestDependencies = [
+            jUnit: "junit:junit:${jUnitVersion}",
+            roboelectric: "org.robolectric:robolectric:${roboelectricVersion}",
+            kotlin: "org.jetbrains.kotlin:kotlin-stdlib:${kotlinVersion}",
+            kotlinTest: "org.jetbrains.kotlin:kotlin-test-junit:${kotlinTestVersion}",
+            mockitoKotlin: "com.nhaarman:mockito-kotlin:${mockitoKotlin}",
+            kluent: "org.amshove.kluent:kluent:${kluenVersion}",
+            kotlinReflect: "org.jetbrains.kotlin:kotlin-reflect:${kotlin_version}"
+    ]
+
+    presentationAndroidTestDependencies = [
+            espresso: "com.android.support.test.espresso:espresso-core:${espressoVersion}",
+            espressoContrib: "com.android.support.test.espresso:espresso-contrib:${espressoVersion}",
+            runner: "com.android.support.test:runner:${rulesVersion}",
+            rules: "com.android.support.test:rules:${rulesVersion}",
+            espressoIntents: "com.android.support.test.espresso:espresso-intents:${espressoVersion}",
+            annotations: "com.android.support:support-annotations:${annotationsVersion}",
+            mockitoKotlin: "com.nhaarman:mockito-kotlin:${mockitoKotlin}",
+            kotlinReflect: "org.jetbrains.kotlin:kotlin-reflect:${kotlin_version}",
+            daggerMock: "com.github.fabioCollini:DaggerMock:${daggerMockVersion}",
+    ]
+
+    coreDependencies = [
+            kotlin: "org.jetbrains.kotlin:kotlin-stdlib:${kotlinVersion}",
+            appcomapt_v7: "com.android.support:appcompat-v7:${appcompatV7Version}",
+            recyclerview: "com.android.support:recyclerview-v7:${appcompatV7Version}",
+            cardview: "com.android.support:cardview-v7:${appcompatV7Version}",
+            anko: "org.jetbrains.anko:anko-common:${ankoVersion}",
+            design: "com.android.support:design:${designVersion}",
+            retrofit: "com.squareup.retrofit2:retrofit:${retrofitVersion}",
+            gson_converter: "com.squareup.retrofit2:converter-gson:${retrofitVersion}",
+            rxjava_adapter: "com.squareup.retrofit2:adapter-rxjava2:${retrofitVersion}",
+            javaxInject: "javax.inject:javax.inject:${javaxInjectVersion}",
+            ankoSqlite: "org.jetbrains.anko:anko-sqlite:${ankoVersion}"
+    ]
+
+    developmentDependencies = [
+            leakCanary: "com.squareup.leakcanary:leakcanary-android:${leakCanaryVersion}",
+    ]
+
+}

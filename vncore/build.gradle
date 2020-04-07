@@ -1,0 +1,72 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    def globalConfiguration = rootProject.extensions.getByName("ext")
+
+    compileSdkVersion globalConfiguration.getAt("androidCompileSdkVersion")
+    buildToolsVersion globalConfiguration.getAt("androidBuildToolsVersion")
+
+
+    dexOptions {
+        jumboMode = true
+        // here heap size give 4g i got this thing from https://groups.google.com/forum/#!topic/adt-dev/P_TLBTyFWVY
+
+        javaMaxHeapSize "4g"
+    }
+
+    defaultConfig {
+        minSdkVersion globalConfiguration.getAt("androidMinSdkVersion")
+        targetSdkVersion globalConfiguration.getAt("androidTargetSdkVersion")
+
+        versionCode globalConfiguration.getAt("androidVersionCode")
+        versionName globalConfiguration.getAt("androidVersionName")
+        multiDexEnabled true
+
+    }
+
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+        main.res.srcDirs =
+                [
+                        'src/main/res',
+                        'src/main/res/values/styles',
+                        'src/main/res/values/strings',
+                ]
+
+    }
+}
+
+dependencies {
+    compile 'com.android.support:multidex:1.0.1'
+
+    def coreDependencies = rootProject.ext.coreDependencies
+
+    compile coreDependencies.kotlin
+    compile coreDependencies.appcomapt_v7
+    compile coreDependencies.recyclerview
+    compile coreDependencies.cardview
+    compile coreDependencies.anko
+    compile coreDependencies.design
+    compile coreDependencies.retrofit
+    compile coreDependencies.gson_converter
+    compile coreDependencies.rxjava_adapter
+    compile coreDependencies.javaxInject
+    compile coreDependencies.ankoSqlite
+
+    compile fileTree(dir: 'libs', include: '*.jar')
+
+}
+repositories {
+    mavenCentral()
+
+}
+

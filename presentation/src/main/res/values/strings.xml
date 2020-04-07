@@ -1,0 +1,32 @@
+<resources>
+  <string name="app_name">Verdnasplit</string>
+  <string name="airport">Airport</string>
+  <string name="expeditions">Expeditions</string>
+  <string name="menu">Menu</string>
+  <string name="childs">Childs</string>
+  <string name="date">Date</string>
+  <string name="lines">Lines</string>
+  <string name="scan">Scan</string>
+  <string name="add_child">Add child</string>
+  <string name="add_child_scan">Add child ans scan</string>
+  <string name="delete_scan">Delete element</string>
+
+  <string name="delete_scan_title">Delete element</string>
+  <string name="delete_scan_message">Do you want to delete this element and all his children?</string>
+  <string name="add_scan">Add element</string>
+  <string name="refresh_scans">Refresh elements</string>
+  <string name="logout">Logout</string>
+  <string name="create_source">Create source</string>
+
+  <string name="delete_lines">Delete lines</string>
+  <string name="delete_lines_message">Do you want to delete selected lines?</string>
+  <string name="upload_lines">Upload lines</string>
+  <string name="group_lines">Group lines</string>
+
+  <string name="message_dialog_add_child">Put the name of the new child element</string>
+
+  <string name="add_source">Add source</string>
+  <string name="message_dialog_add_source">Put the name of the new destiny element</string>
+
+
+</resources>

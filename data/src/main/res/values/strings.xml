@@ -1,0 +1,15 @@
+<resources>
+    <string name="error_500">Internal server error</string>
+    <string name="error_404">Resource not found</string>
+    <string name="time_out">Connection timeout</string>
+    <string name="error_login">Invalid user or password</string>
+    <string name="error_getting_scans">Error geting scans</string>
+    <string name="error_add_scan">Error adding scan</string>
+    <string name="error_delete_scans">Error deleting scan</string>
+    <string name="error_getting_warehouses">Error getting warehouses</string>
+    <string name="error_getting_scan_lines">Error getting lines</string>
+    <string name="error_creating_scan_lines">Error creating lines</string>
+    <string name="error_deleting_scan_lines">Error deleting lines</string>
+    <string name="error_getting_update">Error getting new version</string>
+
+</resources>

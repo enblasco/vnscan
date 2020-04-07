@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="user">Usuario</string>
+    <string name="password">Contraseña</string>
+    <string name="login">Iniciar sesión</string>
+    <string name="show_password">Mostrar contraseña</string>
+    <string name="retry">Reintentar</string>
+    <string name="remember_password">Guardar contraseña</string>
+
+</resources>

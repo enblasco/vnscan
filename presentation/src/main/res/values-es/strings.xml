@@ -1,0 +1,32 @@
+<resources>
+  <string name="app_name">Verdnasplit</string>
+  <string name="airport">Aeropuerto</string>
+  <string name="expeditions">Expediciones</string>
+  <string name="menu">Menú</string>
+  <string name="childs">Hijos</string>
+  <string name="date">Fecha</string>
+  <string name="lines">Líneas</string>
+  <string name="scan">Escanear</string>
+  <string name="add_child">Añadir hijo</string>
+  <string name="add_child_scan">Añadir hijo y escanear</string>
+  <string name="delete_scan">Borrar elemento</string>
+
+  <string name="delete_scan_title">Borrar elemento</string>
+  <string name="delete_scan_message">¿Desea usted borrar este elemento y todos sus hijos?</string>
+
+  <string name="add_scan">Añadir elemento</string>
+  <string name="refresh_scans">Refrescar elementos</string>
+  <string name="logout">Salir</string>
+  <string name="create_source">Crear origen</string>
+
+  <string name="delete_lines">Borrar líneas</string>
+  <string name="delete_lines_message">¿Desea borrar las líneas seleccionadas?</string>
+  <string name="upload_lines">Subir líneas</string>
+  <string name="group_lines">Agrupar líneas</string>
+
+  <string name="message_dialog_add_child">Introduzca el nombre del nuevo elemento hijo</string>
+
+  <string name="add_source">Añadir origen</string>
+  <string name="message_dialog_add_source">Introduzca el nombre del nuevo destino</string>
+
+</resources>

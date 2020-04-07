@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="VnEditText">
+        <attr name="hint" format="string" />
+        <attr name="isPassword" format="boolean"/>
+    </declare-styleable>
+</resources>

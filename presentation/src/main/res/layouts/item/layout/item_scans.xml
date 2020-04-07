@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/WidhtMatchHeightWrap"
+    android:padding="@dimen/padding_medium"
+    android:layout_marginBottom="@dimen/margin_small"
+    android:background="@android:color/white">
+
+    <include layout="@layout/image_more"/>
+
+    <LinearLayout
+        android:layout_toLeftOf="@+id/scanMore"
+        style="@style/WidhtMatchHeightWrap"
+        android:orientation="vertical"
+        android:layout_centerVertical="true">
+
+        <TextView
+            style="@style/TextScan"
+            android:id="@+id/scanTitle" />
+
+        <LinearLayout
+            style="@style/WidhtMatchHeightMatch"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextScanElement"
+                android:text="@string/childs" />
+            <TextView
+                android:id="@+id/scanChilds"
+                style="@style/TextScanElement"
+                android:text="0"
+                android:gravity="center"/>
+            <TextView
+                style="@style/TextScanElement"
+                android:text="@string/lines" />
+            <TextView
+                android:id="@+id/scanLines"
+                style="@style/TextScanElement"
+                android:text="0"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/WidhtMatchHeightWrap"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextScanElement"
+                android:text="@string/date" />
+
+            <TextView
+                android:id="@+id/scanDate"
+                style="@style/TextScanElement"
+                android:gravity="center"/>
+
+            <View style="@style/TextScanElement"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

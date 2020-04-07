@@ -1,0 +1,49 @@
+apply plugin: 'kotlin'
+apply plugin: 'java'
+apply plugin: 'kotlin-allopen'
+
+allOpen {
+    annotation("es.verdnatura.vnsplits.domain.TestOpen")
+}
+
+
+configurations {
+    provided
+}
+
+sourceSets {
+    main.java.srcDirs += "src/main/kotlin"
+    test.java.srcDirs += 'src/test/kotlin'
+
+    main{
+        compileClasspath += configurations.provided
+    }
+}
+
+dependencies {
+    def domainDependencies = rootProject.ext.domainDependencies
+    def domainTestDependencies = rootProject.ext.domainTestDependencies
+
+    compile domainDependencies.rxJava
+    compile domainDependencies.javaxInject
+    compile domainDependencies.kotlin
+    compile domainDependencies.gson_converter
+
+    testCompile domainTestDependencies.jUnit
+    testCompile domainTestDependencies.kotlin
+    testCompile domainTestDependencies.kotlinTest
+    testCompile domainTestDependencies.mockitoKotlin
+    testCompile domainTestDependencies.kluent
+    testCompile domainTestDependencies.assertj
+
+
+    provided domainDependencies.javaxAnnotation
+
+    compile fileTree(dir: 'libs', include: '*.jar')
+
+}
+
+
+repositories {
+    mavenCentral()
+}

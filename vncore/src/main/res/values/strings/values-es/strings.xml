@@ -1,0 +1,17 @@
+<resources>
+
+    <string name="scan">Escanear</string>
+
+    <string name="error_500">Error interno del servidor</string>
+    <string name="error_404">Recurso no encontrado</string>
+    <string name="time_out">Tiempo de espera agotado</string>
+    <string name="error_login">Usuario o contraseña incorrectos</string>
+    <string name="select_option">Seleccione una opción</string>
+
+    <string name="update_message">Existe una nueva versión de la aplicación, ¿Desea actualizar?</string>
+
+    <string name="accept">Aceptar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="delete">Eliminar</string>
+
+</resources>

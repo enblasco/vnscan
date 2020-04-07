@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    style="@style/WidhtMatchHeightWrap"
+    android:padding="@dimen/padding_medium"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        style="@style/WidhtMatchHeightWrap"
+        android:orientation="vertical"
+        android:layout_toLeftOf="@+id/containerLine">
+            <TextView android:id="@+id/code"
+                style="@style/WidhtMatchHeightWrap"
+                android:textStyle="bold" />
+            <TextView android:id="@+id/value"
+                style="@style/WidhtMatchHeightWrap" />
+            <TextView android:id="@+id/info"
+                style="@style/WidhtMatchHeightWrap" />
+    </LinearLayout>
+
+    
+    <RelativeLayout
+        android:id="@+id/containerLine"
+        style="@style/WidhtWrapHeightWrap"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true">
+        <es.verdnatura.core.components.vnswitch.VnSwitch
+            android:id="@+id/switchDelete"
+            style="@style/WidhtWrapHeightWrap" />
+        <TextView android:id="@+id/total"
+            style="@style/WidhtWrapHeightWrap"
+            android:textStyle="bold"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+    
+
+</RelativeLayout>
